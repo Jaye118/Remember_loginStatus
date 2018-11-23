@@ -8,7 +8,7 @@
             if(isPostBack == "False") {
                 GetLastUser();
             }
-        }
+        } 
         function GetLastUser() {
             var id = "49BAC005-7D5B-4231-8CEA-16939BEACD67";//GUID标识符
             var usr = GetCookie(id);
@@ -22,7 +22,7 @@
         //点击登录时触发客户端事件
         function SetPwdAndChk() {
             //取用户名
-            var usr = document.getElementById('txtUserName').value;
+            var usr = document.getElementById('txtUserName').value; 
             alert(usr);
             //将最后一个用户信息写入到Cookie
             SetLastUser(usr);
